@@ -1,7 +1,11 @@
 aid: con-way
-url: https://raw.githubusercontent.com/api-evangelist/con-way/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/con-way/refs/heads/main/apis.yml
 modified: '2026-03-23'
 apis: []
 common:
   - type: Website
     url: https://www.con-way.com
+description: >-
+  You can trust XPO's Less-Than-Truckload capabilities to maximize your shipping efforts
+  to take advantage of the fastest transit times for the size of your freight.
