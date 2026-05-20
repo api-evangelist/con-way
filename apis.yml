@@ -29,6 +29,8 @@ x-status: defunct
 x-successor: xpo-logistics
 apis: []
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/con-way-freight
   - type: Successor Website
     url: https://www.xpo.com
   - type: Wikipedia
