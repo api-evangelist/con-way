@@ -1,0 +1,101 @@
+name: Con-way — .well-known discovery probe
+generated: '2026-09-05'
+method: probed
+source: >-
+  Live unauthenticated HTTPS probes of every host this record knows for the
+  retired Con-way brand. Con-way has no apis[] entries, no baseURL and no
+  OpenAPI servers[], so the only probeable hosts are the registrable domain
+  con-way.com and its www host. Both are now operated by XPO Logistics
+  (whois registrar MarkMonitor, nameservers inpau10267.xpo.com /
+  inpau10927.xpo.com), which acquired Con-way on 2015-10-30 and retired the
+  brand in May 2017.
+note: >-
+  NOTHING WAS FOUND. www.con-way.com returns a genuine HTTP 404 on all five
+  discovery paths. The apex con-way.com is a 302 redirect to
+  https://www.xpo.com/, which answers HTTP 200 with the XPO marketing
+  homepage for EVERY /.well-known/* path — a catch-all SPA shell, not a
+  document, and in any case a page belonging to a DIFFERENT company (XPO
+  Logistics, profiled separately at all/xpo-logistics). Those 200s are
+  recorded here as misses with their redirect target so a later run does not
+  mistake them for served documents. No WellKnown or SecurityTxt pointer is
+  wired into apis.yml, because no path returned a real document.
+hosts:
+  - host: www.con-way.com
+    note: >-
+      Serves real 404s from an XPO application template; https://www.con-way.com/
+      itself 302s to https://ext-web.ltl-xpo.com/landing (XPO's LTL customer
+      portal). https://www.con-way.com/developers returns 404.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+  - host: con-way.com
+    note: >-
+      Every path 302s to https://www.xpo.com/ and resolves 200 text/html with
+      the XPO homepage. Recorded as a miss: an HTML catch-all is not a
+      document, and the content belongs to the acquirer, not to Con-way.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        observed_status: 200
+        redirected_to: https://www.xpo.com/
+        content_type: text/html; charset=utf-8
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        observed_status: 200
+        redirected_to: https://www.xpo.com/
+        content_type: text/html; charset=utf-8
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        observed_status: 200
+        redirected_to: https://www.xpo.com/
+        content_type: text/html; charset=utf-8
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        observed_status: 200
+        redirected_to: https://www.xpo.com/
+        content_type: text/html; charset=utf-8
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        observed_status: 200
+        redirected_to: https://www.xpo.com/
+        content_type: text/html; charset=utf-8
+        file: null
+agent_card_probe:
+  note: >-
+    STEP 0b/3c A2A probe. /.well-known/agent-card.json and the legacy
+    /.well-known/agent.json were fetched on both hosts. www.con-way.com
+    returned 404 on both; con-way.com returned the same XPO HTML catch-all,
+    which fails the AgentCard shape test (not a JSON object, none of
+    name/url/version/protocolVersion/capabilities/skills present). No agent
+    card exists, so per the contract NO a2a/ artifact and NO AgentCard
+    pointer were written.
+  probes:
+    - url: https://www.con-way.com/.well-known/agent-card.json
+      status: 404
+    - url: https://www.con-way.com/.well-known/agent.json
+      status: 404
+    - url: https://con-way.com/.well-known/agent-card.json
+      status: 200
+      verdict: html-catch-all-not-a-card
+      redirected_to: https://www.xpo.com/
+    - url: https://con-way.com/.well-known/agent.json
+      status: 200
+      verdict: html-catch-all-not-a-card
+      redirected_to: https://www.xpo.com/

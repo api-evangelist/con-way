@@ -44,7 +44,7 @@ tags:
   - Shipping
   - Transportation
 created: '2025-03-23'
-modified: '2026-04-28'
+modified: '2026-09-05'
 specificationVersion: '0.23'
 kind: company
 x-status: defunct
@@ -57,8 +57,36 @@ common:
     url: https://www.xpo.com
   - type: Wikipedia
     url: https://en.wikipedia.org/wiki/Con-way
-  - type: Con-way Freight Wikipedia
+  - type: Wikipedia
     url: https://en.wikipedia.org/wiki/Con-way_Freight
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-05'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    Con-way was absorbed into XPO Logistics in 2015 and the brand was retired
+    in 2017; con-way.com is now an XPO-owned redirect — the apex 302s to
+    www.xpo.com and www.con-way.com 302s to XPO's LTL customer portal at
+    ext-web.ltl-xpo.com/landing — so there is no Con-way-branded developer
+    surface left to read, and every tracking "API" search returns third-party
+    aggregators (AfterShip, TrackingMore, Shipway) rather than a Con-way
+    contract.
+  evidence:
+    - url: https://www.con-way.com/developers
+      status: 404
+    - url: https://www.con-way.com/
+      status: 302
+    - url: https://con-way.com/
+      status: 302
+    - url: https://www.con-way.com/.well-known/api-catalog
+      status: 404
+    - url: https://www.con-way.com/en/
+      status: 200
+  checked: '2026-09-05'
