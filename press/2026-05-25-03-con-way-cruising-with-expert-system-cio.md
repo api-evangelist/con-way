@@ -1,7 +1,9 @@
 ---
 title: Con-Way Cruising With Expert System | CIO
 url: https://www.cio.com/article/270091/supply-chain-management-con-way-cruising-with-expert-system.html
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Con-way" press release artificial intelligence'
 position: 3
 source: serpapi-google

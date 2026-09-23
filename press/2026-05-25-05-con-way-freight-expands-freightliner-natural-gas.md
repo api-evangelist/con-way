@@ -1,7 +1,9 @@
 ---
 title: Con-way Freight Expands Freightliner Natural Gas- ...
 url: https://www.truckinginfo.com/news/con-way-freight-expands-freightliner-natural-gas-powered-tractors-in-its-fleet
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Con-way" press release artificial intelligence'
 position: 5
 source: serpapi-google

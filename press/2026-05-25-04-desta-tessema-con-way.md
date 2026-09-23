@@ -1,7 +1,9 @@
 ---
 title: Desta Tessema - Con-way
 url: https://www.linkedin.com/in/desta-tessema-82822923
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Con-way" press release artificial intelligence'
 position: 4
 source: serpapi-google
