@@ -1,4 +1,4 @@
-# Con-way (con-way)
+# Con-way
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,32 +64,28 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
+
 Con-way Inc. was a North American freight transportation and logistics company best known for its Less-Than-Truckload (LTL) carrier Con-way Freight along with Menlo Logistics, Con-way Truckload, and Con-way Multimodal. On October 30, 2015, XPO Logistics completed a $3 billion acquisition of Con-way; by May 2017 the Con-way brand had been fully retired in favor of XPO. This profile is preserved as a historical record; Con-way no longer operates under this name and modern shipping APIs are surfaced under XPO.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/con-way/refs/heads/main/apis.yml)
+**Areas:** Defunct · Freight · LTL · Logistics · Shipping · Transportation
 
-## Status
+## Con-way on APIs.io (historical record)
 
-- **Operational status:** Defunct (acquired by XPO Logistics, October 30, 2015; brand retired May 2017)
-- **Successor:** [XPO Logistics](https://www.xpo.com)
-- **x-type:** company
+Everything profiled for Con-way is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/con-way/](https://apis.io/providers/con-way/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+## API Evangelist rating
 
-- Defunct, Freight, Less-Than-Truckload, Logistics, Shipping, Transportation
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
 
-## APIs
+## How this profile is made
 
-No public developer APIs were ever published under the Con-way brand. Modern shipping, tracking, and rating APIs from the successor company are exposed under [XPO Logistics](https://www.xpo.com).
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Common Properties
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Con-way: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-- [XPO Logistics (successor)](https://www.xpo.com)
-- [Con-way on Wikipedia](https://en.wikipedia.org/wiki/Con-way)
-- [Con-way Freight on Wikipedia](https://en.wikipedia.org/wiki/Con-way_Freight)
+## Open an issue
 
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/con-way/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
